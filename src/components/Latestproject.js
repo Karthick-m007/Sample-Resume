@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import img1 from "../assets/project-1.jpg"
-import img2 from "../assets/project-2.jpg"
-import img3 from "../assets/project-3.jpg"
-import img4 from "../assets/project-4.jpg"
+import img1 from "../assets/project31.png"
+import img2 from "../assets/project32.png"
+import img3 from "../assets/project33.png"
+import img4 from "../assets/project34.png"
 import img5 from "../assets/project-5.jpg"
 import img6 from "../assets/project-6.jpg"
 import { FaCircleRight } from "react-icons/fa6";
@@ -15,13 +15,15 @@ export default function Latestproject() {
             id: 1,
             image: img1,
             logoname: "Landing Page",
-            contentename: "Html",
+            contentename: "Using HTML,CSS,Bootstrap",
+            linking:"https://karthick-m007.github.io/grosery-bootstrap/",
         },
         {
             id: 2,
             image: img2,
-            logoname: "main Page",
-            contentename: "CSS",
+            logoname: "Form Page",
+            contentename: "with validation",
+            linking: "https://karthick-m007.github.io/grosery-bootstrap/",
         },
 
         {
@@ -29,16 +31,19 @@ export default function Latestproject() {
             image: img3,
             logoname: "Landing Page",
             contentename: "js ",
+            linking: "https://karthick-m007.github.io/grosery-bootstrap/",
         }, {
             id: 4,
             image: img4,
-            logoname: "Landing Page",
-            contentename: "BootStrap",
+            logoname: "sample Resume ",
+            contentename: "Recatjs,Bootstrap,Tailwind",
+            linking: "https://sample-resume-xi.vercel.app/",
         }, {
             id: 5,
             image: img5,
             logoname: "Landing Page",
             contentename: "ReactJs",
+            linking: "https://karthick-m007.github.io/grosery-bootstrap/",
         },
 
         {
@@ -67,8 +72,10 @@ export default function Latestproject() {
                             <img src={projects.image} class="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">{projects.logoname}
-                                    <button type="button" className='  float-end text-4xl mt-2 text-violet1 bg-white' data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick={()=>setSelectproject(projects)}><FaCircleRight />
-                                    </button>
+
+                                    <a href={projects.linking} target="_self"
+                                        rel="noopener noreferrer" className='  float-end text-4xl mt-2 text-violet1 bg-white'  onClick={()=>setSelectproject(projects)}><FaCircleRight />
+                                    </a>
 
                                     {/* <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                         Launch static backdrop modal
