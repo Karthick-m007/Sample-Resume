@@ -16,14 +16,14 @@ export default function Latestproject() {
             image: img1,
             logoname: "Landing Page",
             contentename: "Using HTML,CSS,Bootstrap",
-            linking:"https://karthick-m007.github.io/grosery-bootstrap/",
+            linking:"https://karthick-m007.github.io/Health-connect/",
         },
         {
             id: 2,
             image: img2,
             logoname: "Form Page",
             contentename: "with validation",
-            linking: "https://karthick-m007.github.io/grosery-bootstrap/",
+            linking: "https://karthick-m007.github.io/Health-connect/newregister.html",
         },
 
         {
@@ -37,21 +37,22 @@ export default function Latestproject() {
             image: img4,
             logoname: "sample Resume ",
             contentename: "Recatjs,Bootstrap,Tailwind",
-            linking: "https://sample-resume-xi.vercel.app/",
-        }, {
-            id: 5,
-            image: img5,
-            logoname: "Landing Page",
-            contentename: "ReactJs",
-            linking: "https://karthick-m007.github.io/grosery-bootstrap/",
+            linking: "https://new-sample-resume-g1ev.vercel.app/",
         },
+        //  {
+        //     id: 5,
+        //     image: img5,
+        //     logoname: "Landing Page",
+        //     contentename: "ReactJs",
+        //     linking: "https://karthick-m007.github.io/grosery-bootstrap/",
+        // },
 
-        {
-            id: 6,
-            image: img6,
-            logoname: "Landing Page",
-            contentename: "CSS  ",
-        },
+        // {
+        //     id: 6,
+        //     image: img6,
+        //     logoname: "Landing Page",
+        //     contentename: "CSS  ",
+        // },
 
     ]
     const [selectproject,setSelectproject]=useState(null)
