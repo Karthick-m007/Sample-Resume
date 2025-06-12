@@ -84,7 +84,7 @@ export default function TailwindNavbar() {
                             </a>
 
                             <a
-                                href="/dummy.pdf"
+                                href="/Resume.pdf"
                                 download
                                 className="text-gray-700 hover:text-violet-600"
                             >
