@@ -109,6 +109,7 @@ export default function TailwindNavbar() {
                             <a href="#service" className="text-gray-700 hover:text-violet-600">Services</a>
                             <a href="#about" className="text-gray-700 hover:text-violet-600">About</a>
                             <a href="#projects" className="text-gray-700 hover:text-violet-600">Projects </a>
+                            <a href="#Resume" className="text-gray-700 hover:text-violet-600">Resume</a>
                             <a href="#contact" className="text-gray-700 hover:text-violet-600">Contact </a>
                         </div>
                     )}

@@ -85,7 +85,7 @@ export default function Skills() {
                             
                             href="/Resume.pdf"
                             download
-                            className="bg-yellow-500 text-white px-4 py-2 rounded mt-24 mx-auto ms-20"
+                            className="bg-yellow-500 text-white px-4 py-2 rounded lg:mt-24 lg:text-nowrap lg:ms-10 mt-8 ms-10 me-10 flex "
                         >
                             Download Resume
                         </a>    
@@ -95,7 +95,7 @@ export default function Skills() {
                 </div>
 
                 <div>
-                    <h1 className=' mt-4 flex justify-center lg:mt-3  text-3xl font-bold mb-3'>Academic Journey</h1>
+                    <h1 className=' mt-14 flex justify-center lg:mt-3  text-3xl font-bold mb-3'>Academic Journey</h1>
                     <hr />
                     <div className='grid grid-cols-2 my-2'>
                     <h1 className='font-bold'>2019 -2023</h1>
