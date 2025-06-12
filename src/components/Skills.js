@@ -21,14 +21,12 @@ export default function Skills() {
             <div className='lg:grid grid-cols-2 ms-16 me-16 gap-3'>
                 <div className='mt-3'>
                     <h1 className='mt-2 mb-3 text-4xl font-bold'>
-                        Skills and 
-                        <br></br>
-                        Experience
+                        Skills                       
                     </h1>
 
-                    <p className='my-3 text-xl'>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                    <p className='my-3 text-xl'>I am a beginner web developer with a strong interest in creating websites. I enjoy learning new things and building simple, clean, and responsive web pages. I am looking forward to growing my skills and working on real-world projects.</p>
 
-                    <h2 className='my-3 text-2xl font-bold mb-4'>My Skills</h2>
+                    <h2 className='my-3 text-2xl font-bold mb-4'>Technical Skills </h2>
 
                     <div className='lg:grid grid-cols-2   '>
                         <div className='grid gap-3 justify-center lg:mt-3 '>
@@ -80,14 +78,24 @@ export default function Skills() {
                                 </h3>
                                 <h1 className='ms-3'>TAILWIND</h1>
                             </div>
+                           
 
                         </div>
+                        <a
+                            
+                            href="/dummy.pdf"
+                            download
+                            className="bg-yellow-500 text-white px-4 py-2 rounded mt-24 mx-auto ms-20"
+                        >
+                            Download Resume
+                        </a>    
                     </div>
+                    
 
                 </div>
 
                 <div>
-                    <h1 className= ' mt-4 flex justify-center lg:mt-3  text-3xl font-bold mb-3'>Experience</h1>
+                    <h1 className=' mt-4 flex justify-center lg:mt-3  text-3xl font-bold mb-3'>Academic Journey</h1>
                     <hr />
                     <div className='grid grid-cols-2 my-2'>
                     <h1 className='font-bold'>2019 -2023</h1>

@@ -83,11 +83,21 @@ export default function TailwindNavbar() {
                                 Projects
                             </a>
 
+                            <a
+                                href="/dummy.pdf"
+                                download
+                                className="text-gray-700 hover:text-violet-600"
+                            >
+                                Resume
+                            </a>
+
                             <a href='#contact'
                                 className="text-gray-700 hover:text-violet-600"
                             >
                                 Contact
                             </a>
+
+                           
                         </div>
 
                     </div>

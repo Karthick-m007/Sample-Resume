@@ -9,7 +9,7 @@ export default function Contact() {
 
     const [formData, setFormData] = useState({
         firstName: '',
-        lastName: '',
+        mailId: '',
         subject: '',
         message: '',
     });
@@ -29,7 +29,7 @@ export default function Contact() {
     const validate = () => {
         const newErrors = {};
         if (!formData.firstName.trim()) newErrors.firstName = 'First name is required';
-        if (!formData.lastName.trim()) newErrors.lastName = 'Last name is required';
+        if (!formData.mailId.trim()) newErrors.mailId = 'Last name is required';
         if (!formData.subject.trim()) newErrors.subject = 'Subject is required';
         if (!formData.message.trim()) newErrors.message = 'Message cannot be empty';
         return newErrors;
@@ -55,7 +55,7 @@ export default function Contact() {
             .then(
                 () => {
                     alert('Form submitted successfully!');
-                    setFormData({ firstName: '', lastName: '', subject: '', message: '' });
+                    setFormData({ firstName: '', mailId: '', subject: '', message: '' });
                     setErrors({});
                 },
                 (error) => {
@@ -83,33 +83,23 @@ export default function Contact() {
 
                     <form ref={form} onSubmit={handleSubmit}>
                         <div className='lg:grid grid-cols-2 w-96 my-3'>
-                            <div className='flex flex-column'>
-                                <label className='mb-2 text-xl'>First name</label>
+                            <span className='flex flex-column my-3'>
+                                <label className='mb-2 text-xl'>First Name:</label>
                                 <input
                                     name='firstName'
                                     value={formData.firstName}
                                     onChange={handleChange}
-                                    className='border border-black w-64 lg:w-44 h-8 p-2'
-                                    placeholder='First *'
+                                    className='border border-black w-64 lg:w-96 h-8 p-2'
+                                    placeholder='First Name *'
                                 />
                                 {errors.firstName && <p className='text-red-500 text-sm'>{errors.firstName}</p>}
-                            </div>
+                            </span>
 
-                            <div className='flex flex-column lg:ms-3 md:my-auto'>
-                                <label className='mb-2 text-xl'>Last name</label>
-                                <input
-                                    name='lastName'
-                                    value={formData.lastName}
-                                    onChange={handleChange}
-                                    className='border border-black w-64 lg:w-44 h-8 p-2'
-                                    placeholder='Last *'
-                                />
-                                {errors.lastName && <p className='text-red-500 text-sm'>{errors.lastName}</p>}
-                            </div>
+                            
                         </div>
 
                         <span className='flex flex-column my-3'>
-                            <label className='mb-2 text-xl'>Subject</label>
+                            <label className='mb-2 text-xl'>Subject:</label>
                             <input
                                 name='subject'
                                 value={formData.subject}
@@ -118,6 +108,18 @@ export default function Contact() {
                                 placeholder='Subject *'
                             />
                             {errors.subject && <p className='text-red-500 text-sm'>{errors.subject}</p>}
+                        </span>
+
+                        <span className='flex flex-column my-3'>
+                            <label className='mb-2 text-xl'>Your Mail Id:</label>
+                            <input
+                                name='mailId'
+                                value={formData.mailId}
+                                onChange={handleChange}
+                                className='border border-black w-64 lg:w-96 h-8 p-2'
+                                placeholder='MailId *'
+                            />
+                            {errors.mailId && <p className='text-red-500 text-sm'>{errors.mailId}</p>}
                         </span>
 
                         <span className='flex flex-column my-3'>
@@ -146,7 +148,7 @@ export default function Contact() {
                         </div>
                         <div className='ms-16 my-2'>
                             <h3 className='leading-10 text-2xl'>Phone</h3>
-                            <p>1234569870</p>
+                            <p>8610772856</p>
                         </div>
                         <hr className='w-80 lg:w-96 mt-3' />
                     </div>
@@ -157,7 +159,7 @@ export default function Contact() {
                         </div>
                         <div className='ms-16 my-2'>
                             <h3 className='leading-10 text-2xl'>Mail</h3>
-                            <p>dasss@gmail.com</p>
+                            <p>karthickraja200211@gmail.com</p>
                         </div>
                         <hr className='w-80 lg:w-96 mt-3' />
                     </div>
@@ -169,7 +171,8 @@ export default function Contact() {
                         <div className='ms-16 my-2'>
                             <h3 className='leading-10 text-xl lg:text-2xl'>Address</h3>
                             <p className='w-52 text-lg lg:w-72'>
-                                Warnwe Park Streetperrine, FL 33157 New York City
+                               95,near sakthi mandapam street,
+                               perundurai.
                             </p>
                         </div>
                         <hr className='w-80 lg:w-96 mt-3' />

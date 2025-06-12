@@ -3,6 +3,7 @@ import img1 from "../assets/home-banner.png";
 import "./dummycss.css";
 
 export default function Headermaincontent() {
+
     return (
         <div className="px-6 sm:px-10 lg:px-16 py-8" id='header'>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -18,16 +19,16 @@ export default function Headermaincontent() {
                     </div>
 
                     {/* Heading */}
-                    <h5 className="lg:flex flex-col justify-start mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6">
-                        <span className='lg:flex justify-start mt-6 lg:leading-3'>We Have</span> <br/> 
-                        <span className='lg:flex justify-start lg:leading-3'>Design</span> <br/>
-                        <span className='lg:flex justify-start lg:leading-3'>Experience</span>
+                   
+                    <h5 className="lg:flex flex-col justify-start mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold leading-tight mb-6">     
+                        <span className='lg:flex justify-start lg:leading-3 lg:text-3xl md:text-3xl'>Hi, I'm Karthick </span> <br/>
+                        <span className='lg:flex justify-start lg:leading-3 lg:text-3xl md:text-3xl'>Creative Web Developer </span> <br/>
+                        <span className='lg:flex justify-start lg:leading-3 lg:text-3xl md:text-3xl'>Modern & responsive websites.</span>
                     </h5>
 
                     {/* Paragraph */}
                     <p className="mb-10 mt-6 lg:text-start  sm:text-lg md:text-xl lg:text-2xl max-w-xl">
-                        I design and develop services for customers of all sizes, specializing in creating stylish,
-                        modern websites, web services and online stores.
+                        I love designing and developing websites. As a fresher, I am always excited to learn and improve. I focus on making websites that look good and work well on all devices.
                     </p>
 
                     {/* Button */}
