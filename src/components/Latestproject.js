@@ -78,9 +78,7 @@ export default function Latestproject() {
                                         rel="noopener noreferrer" className='  float-end text-4xl mt-2 text-violet1 bg-white'  onClick={()=>setSelectproject(projects)}><FaCircleRight />
                                     </a>
 
-                                    {/* <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                        Launch static backdrop modal
-                                    </button> */}
+                                  
 
 
                                     <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -114,10 +112,7 @@ export default function Latestproject() {
                                                         
                                                     </div>
                                                 </div>
-                                                {/* <div className="modal-footer">
-                          <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          
-                      </div> */}
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -126,13 +121,11 @@ export default function Latestproject() {
 
                                 </p>
 
-                                {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+                              
                             </div>
                         </div>
 
-                        {/* <img src={projects.image} alt="" />
-            <h2>{projects.logoname}</h2>
-            <p>{projects.contentename}</p> */}
+                    
                     </div>
                 ))}
             </div>

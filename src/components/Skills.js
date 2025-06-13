@@ -82,10 +82,9 @@ export default function Skills() {
 
                         </div>
                         <a
-                            
                             href="/Resume.pdf"
                             download
-                            className="bg-yellow-500 text-white px-4 py-2 rounded lg:mt-24 lg:text-nowrap lg:ms-10 mt-8 ms-10 me-10 flex "
+                            className="bg-yellow-500 text-white px-4 py-2 rounded md:w-48 md:mx-auto sm:w-48 sm:mx-auto w-48 mx-auto md:text-center lg:mt-24 lg:text-nowrap lg:ms-10 mt-8 ms-10 me-10 flex "
                         >
                             Download Resume
                         </a>    
@@ -139,14 +138,9 @@ export default function Skills() {
                    </span>
                         
                 </div>
-                
-
 
 
             </div>
-
-
-
 
         </div>
     )
