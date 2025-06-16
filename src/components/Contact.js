@@ -4,6 +4,9 @@ import { FaSquarePhone, FaLocationDot } from "react-icons/fa6";
 import contactimg from "../assets/contact.svg";
 import emailjs from '@emailjs/browser';
 
+import { motion } from "framer-motion";
+
+
 export default function Contact() {
     const form = useRef();
 
@@ -66,18 +69,26 @@ export default function Contact() {
     };
 
     return (
-        <div className="bg-shade-yellow scroll-mt-24" id="contact">
-            <div className="relative w-full">
-                <span className="mt-16 lg:mt-12 mb-5 bg-white text-purple-600 border-2 border-purple-500 px-3 py-1 text-sm font-semibold rotate-[-30deg] absolute -top-5 left-5 shadow-md">
+        <motion.div className="bg-shade-yellow scroll-mt-24 mt-0" id="contact"
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+
+            
+        >
+            <div className="relative w-full  animate__animated animate__pulse">
+                <span className=" mt-16 lg:ms-6 lg:mt-12 mb-5 bg-white text-purple-600 border-2 border-purple-500 px-3 py-1 text-sm font-semibold rotate-[-30deg] absolute -top-5 left-5 shadow-md">
                     Contact.
                 </span>
             </div>
 
             <h1 className="flex justify-center pt-24 pb-3 text-3xl font-bold">Let's Discuss Project</h1>
 
-            <div className="p-3 ms-4 sm:ms-3 lg:ms-5 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="p-3 mx-3 sm:ms-3 lg:ms-5 grid grid-cols-1 lg:grid-cols-2 gap-6 "
+            >
                 {/* Contact Form */}
-                <div className="p-5 w-full sm:w-[90%] md:w-[80%] lg:w-full border border-black lg:py-10 lg:px-24 mx-auto rounded bg-white mb-5">
+                <div className="p-5 w-full  sm:w-[90%] md:w-[80%] lg:w-full border border-black lg:py-10 lg:px-24 mx-auto rounded bg-white mb-5">
                     <h2 className="my-4 text-3xl font-bold">Get in touch</h2>
                     <p className="py-2 text-xl">Our friendly team would love to hear from you.</p>
 
@@ -181,7 +192,7 @@ export default function Contact() {
                     <img src={contactimg} alt="" className="mt-5 mx-auto w-full max-w-xs lg:max-w-sm" />
                 </div>
             </div>
-        </div>
+        </motion.div>
       
           
             

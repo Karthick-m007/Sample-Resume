@@ -12,8 +12,9 @@ export default function Headermaincontent() {
                 <div className="lg:flex flex-col text-center md:text-left items-center md:items-start">
 
                     {/* Tilted Hello Box */}
-                    <div className="relative w-full mb-5">
-                        <span className="bg-white text-purple-600 border-2 border-purple-500 px-3 py-1 text-sm font-semibold rotate-[-30deg] absolute -top-5 left-5  shadow-md">
+                    <div className="relative w-full mb-5 animate__animated animate__pulse">
+                        <span className="bg-white text-purple-600 border-2 border-purple-500 px-3 py-1 text-sm font-semibold rotate-[-30deg] absolute -top-5 left-5  shadow-md ">
+                            
                             Hello.
                         </span>
                     </div>
@@ -21,8 +22,8 @@ export default function Headermaincontent() {
                     {/* Heading */}
                    
                     <h5 className="lg:flex flex-col justify-start mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold leading-tight mb-6">     
-                        <span className='lg:flex justify-start lg:leading-3 lg:text-3xl md:text-3xl'>Hi, I'm Karthick </span> <br/>
-                        <span className='lg:flex justify-start lg:leading-3 lg:text-3xl md:text-3xl'>Creative Web Developer </span> <br/>
+                        <span className='lg:flex justify-start lg:leading-3 lg:text-3xl md:text-3xl'>Hi, I'm <span className='text-cyan-300 ms-2'>Karthick M</span> </span> <br/>
+                        <span className='lg:flex justify-start lg:leading-3 lg:text-3xl md:text-3xl'>Creative    <span className='text-cyan-400 ms-2'> Web Developer</span> </span> <br/>
                         <span className='lg:flex justify-start lg:leading-3 lg:text-3xl md:text-3xl'>Modern & responsive websites.</span>
                     </h5>
 

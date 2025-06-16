@@ -6,6 +6,8 @@ import img4 from "../assets/project34.png"
 import img5 from "../assets/project-5.jpg"
 import img6 from "../assets/project-6.jpg"
 import { FaCircleRight } from "react-icons/fa6";
+import { motion } from "framer-motion";
+
 
 
 export default function Latestproject() {
@@ -58,16 +60,20 @@ export default function Latestproject() {
     const [selectproject,setSelectproject]=useState(null)
 
     return (
-        <div className='my-6 bg-shade-yellow py-4 scroll-mt-24' id='projects'>
-            <div className="relative w-full pb-6 mt-12">
-                <span className="bg-white text-purple-600 border-2 border-purple-500 px-3 py-1 text-sm font-semibold rotate-[-30deg] absolute -top-5 left-5  shadow-md">
+        <div className='mt-6   bg-shade-yellow py-4 scroll-mt-24' id='projects'>
+            <div className="relative w-full pb-6 mt-12  animate__animated animate__pulse">
+                <span className="bg-white ms-6 text-purple-600 border-2 border-purple-500 px-3 py-1 text-sm font-semibold rotate-[-30deg] absolute -top-5 left-5  shadow-md">
                     Projects.
                 </span>
             </div>
             <h1 className='text-4xl  flex justify-center my-4 font-bold lg:justify-start lg:ms-16 '>Latest Project</h1>
             <div className='flex flex-wrap gap-8 justify-center lg:ms-8 lg:me-8 mt-6'>
-                {Project.map((projects) => (
-                    <div key={projects.id}>
+                {Project.map((projects,i) => (
+                    <motion.div key={projects.id}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: i * 0.1, duration: 0.6 }}
+                        viewport={{ once: true, amount: 0.2 }}>
 
                         <div className="card box2" style={{ width: "18rem" }}>
                             <img src={projects.image} class="card-img-top" alt="..." />
@@ -126,7 +132,7 @@ export default function Latestproject() {
                         </div>
 
                     
-                    </div>
+                    </motion.div>
                 ))}
             </div>
 
