@@ -17,7 +17,7 @@ export default function Skills() {
     };
 
     return (
-        <div id='about' className='scroll-mt-24 overflow-x-hidden'>
+        <div id='about' className='scroll-mt-24'>
 
             <motion.div
                 className='lg:grid grid-cols-2 ms-16 me-16 gap-3'
@@ -36,7 +36,6 @@ export default function Skills() {
                     <div className='lg:grid grid-cols-2'>
                         {/* Left Column Skills */}
                         <div className='grid gap-3 justify-center lg:mt-3'>
-                            <h3 className="text-xl font-semibold mb-2">Frontend</h3>
                             {[
                                 { icon: <FaHtml5 />, label: "HTML" },
                                 { icon: <FaCss3Alt />, label: "CSS" },
@@ -59,7 +58,6 @@ export default function Skills() {
 
                         {/* Right Column Skills */}
                         <div className='grid gap-3 justify-center lg:mt-3'>
-                            <h3 className="text-xl font-semibold mb-2">Frontend</h3>
                             {[
                                 { icon: <FaReact />, label: "React" },
                                 { icon: <FaBootstrap />, label: "Bootstrap" },
