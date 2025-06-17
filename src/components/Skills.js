@@ -57,7 +57,7 @@ export default function Skills() {
 
 
                         {/* Right Column Skills */}
-                        <div className='grid gap-3 justify-center lg:mt-3'>
+                        <div className='grid gap-3 justify-center lg:mt-3 mt-4'>
                             {[
                                 { icon: <FaReact />, label: "React" },
                                 { icon: <FaBootstrap />, label: "Bootstrap" },
