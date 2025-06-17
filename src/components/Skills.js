@@ -126,7 +126,7 @@ export default function Skills() {
                         </motion.div>
                     ))}
 
-                    <hr className='w-100 mt-2' />
+                    {/* <hr className='w-100 mt-2' /> */}
 
                     <span className='flex justify-center mt-10'>
                         <motion.img
