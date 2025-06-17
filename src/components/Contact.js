@@ -69,13 +69,13 @@ export default function Contact() {
     };
 
     return (
-        <motion.div className="bg-shade-yellow scroll-mt-24 mt-0" id="contact"
+        <motion.div className="bg-shade-yellow scroll-mt-24 mt-0 overflow-x-hidden" id="contact"
             initial={{ opacity: 0, y: -80 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
 
-            
+
         >
             <div className="relative w-full  animate__animated animate__pulse">
                 <span className=" mt-16 lg:ms-6 lg:mt-12 mb-5 bg-white text-purple-600 border-2 border-purple-500 px-3 py-1 text-sm font-semibold rotate-[-30deg] absolute -top-5 left-5 shadow-md">
@@ -93,19 +93,19 @@ export default function Contact() {
                     <p className="py-2 text-xl">Our friendly team would love to hear from you.</p>
 
                     <form ref={form} onSubmit={handleSubmit}>
-                        
-                            <div className="flex flex-col my-3">
-                                <label className="mb-2 text-xl">First Name:</label>
-                                <input
-                                    name="firstName"
-                                    value={formData.firstName}
-                                    onChange={handleChange}
-                                    className="border border-black w-full h-10 p-2"
-                                    placeholder="First Name *"
-                                />
-                                {errors.firstName && <p className="text-red-500 text-sm">{errors.firstName}</p>}
-                            </div>
-                        
+
+                        <div className="flex flex-col my-3">
+                            <label className="mb-2 text-xl">First Name:</label>
+                            <input
+                                name="firstName"
+                                value={formData.firstName}
+                                onChange={handleChange}
+                                className="border border-black w-full h-10 p-2"
+                                placeholder="First Name *"
+                            />
+                            {errors.firstName && <p className="text-red-500 text-sm">{errors.firstName}</p>}
+                        </div>
+
 
                         <div className="flex flex-col my-3">
                             <label className="mb-2 text-xl">Subject:</label>
@@ -193,10 +193,10 @@ export default function Contact() {
                 </div>
             </div>
         </motion.div>
-      
-          
-            
-  
-        
+
+
+
+
+
     );
 }

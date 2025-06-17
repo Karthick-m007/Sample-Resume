@@ -17,7 +17,7 @@ export default function Skills() {
     };
 
     return (
-        <div id='about' className='scroll-mt-24'>
+        <div id='about' className='scroll-mt-24 overflow-x-hidden'>
 
             <motion.div
                 className='lg:grid grid-cols-2 ms-16 me-16 gap-3'

@@ -5,7 +5,7 @@ import "./dummycss.css";
 export default function Headermaincontent() {
 
     return (
-        <div className="px-6 sm:px-10 lg:px-16 py-8" id='header'>
+        <div className="px-6 sm:px-10 lg:px-16 py-8 overflow-x-hidden" id='header'>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
                 {/* Text Content */}

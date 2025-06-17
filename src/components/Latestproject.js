@@ -60,7 +60,7 @@ export default function Latestproject() {
     const [selectproject,setSelectproject]=useState(null)
 
     return (
-        <div className='mt-6   bg-shade-yellow py-4 scroll-mt-24' id='projects'>
+        <div className='mt-6   bg-shade-yellow py-4 scroll-mt-24 overflow-x-hidden' id='projects'>
             <div className="relative w-full pb-6 mt-12  animate__animated animate__pulse">
                 <span className="bg-white ms-6 text-purple-600 border-2 border-purple-500 px-3 py-1 text-sm font-semibold rotate-[-30deg] absolute -top-5 left-5  shadow-md">
                     Projects.

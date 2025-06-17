@@ -41,7 +41,7 @@ export default function MainContent1() {
     ];
 
     return (
-        <div id='service' className='scroll-mt-24'>
+        <div id='service' className='scroll-mt-24 overflow-x-hidden'>
             <div className='bg-shade-yellow my-4 pt-16 pb-20'>
                 <div className="relative w-full ms-8">
                     <span className="bg-white text-purple-600 border-2 border-purple-500 px-3 py-1 text-sm font-semibold rotate-[-30deg] absolute -top-5 left-5 shadow-md">

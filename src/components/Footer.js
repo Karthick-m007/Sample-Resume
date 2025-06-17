@@ -10,7 +10,7 @@ import { FaArrowAltCircleDown } from "react-icons/fa";
 export const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-horizontal footer-center text-primary-content p-10">
+      <footer className="footer footer-horizontal footer-center text-primary-content p-10 overflow-x-hidden">
         <aside className=' flex flex-col items-center'>
 
           <p className="font-bold text-2xl leading-10">
