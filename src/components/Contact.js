@@ -53,7 +53,7 @@ export default function Contact() {
                 'service_d5rlmc7',    // your service ID
                 'template_44ku41r',   // your template ID
                 form.current,         // the form ref
-                'dmVaVG3KbbIGD0HTa'   // your public key
+                'X1TJH4REUonlxfxno'   // your public key
             )
             .then(
                 () => {
