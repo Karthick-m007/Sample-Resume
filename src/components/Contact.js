@@ -57,7 +57,7 @@ export default function Contact() {
             )
             .then(
                 () => {
-                    alert('Form submitted successfully!');
+                    alert('Your message sent successfully!');
                     setFormData({ firstName: '', mailId: '', subject: '', message: '' });
                     setErrors({});
                 },
