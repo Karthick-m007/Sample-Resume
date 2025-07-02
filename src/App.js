@@ -6,10 +6,13 @@ import Contact from './components/Contact';
 import MainContent1 from './components/MainContent1';
 import { Footer } from './components/Footer';
 import Latestproject from './components/Latestproject';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
     <div >
+
+      <Analytics/>
 {/* 
       <Navbar />
       <Headermaincontent/>
